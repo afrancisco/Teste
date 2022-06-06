@@ -9,3 +9,6 @@ Não adicionei o arquivo de Features pelo fato de o cypress utilizar uma sintaxe
 2 - para execução dos testes é necessario rodar o npm install para instalar as dependencias necessarias
 
 3 - o comando para execução dos testes é o npx cypress open
+
+4 - o usuario e senha de acesso estão na pasta feature/parametros.js
+
