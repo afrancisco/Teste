@@ -1,0 +1,4 @@
+Projeto de Automação em Cypress 
+
+1 - Precisa utilizar o comando npm install para adicionar as dependencias
+2 - Rodar o comando npx cypress open para abrir e poder executar o teste
