@@ -1,0 +1,56 @@
+Story 1 
+
+
+Referente aos critérios de aceite da Story 1 foram encontrados os seguintes pontos:
+
+1 - Mensagem de titulo com texto incorreto (Front)
+Ao realizar o login e acessar a tela de tarefas,o Titulo principal da tarefa está diferente do definido na story
+Esperado: ‘{usuario logado}, this is your todo list for today:’
+Encontrado:`{usuario logado}'s ToDo List`
+
+2 - Sistema está permitindo adicionar task com menos de 3 caracteres(Front/back)
+Ao realizar o login e acessar a tela de tarefas, quando informo o nome de uma tarefa com menos de 3 caracteres, não está realizando nenhuma validação e sendo possível adicionar a tarefa
+Esperado: exibir uma mensagem de alerta informando a quantidade minima de caracteres
+Encontrado: não validou  e salvou a tarefa com nome menor do que o possível.
+
+3 - Botão de adicionar task está desalinhado com o componente de input(Front)
+Ao realizar o login e acessar a tela de tarefas, no imput de adicionar nova tarefa, o botão de adicionar está desalinhado com o componente de input
+Esperado: o componente de input e o button devem estar alinhados
+Encontrado: o botão de adicionar está apresentando um style top:1px  na classe glyphicon que desalinha o componente
+
+4 - O Link "My Tasks" não é exibido quando está em uma resolução menor (Front)
+Ao realizar o login, acessar a tela de tarefas e reduzir o tamanho da tela o responsivo está levando o link de my tasks para dentro do componente "hamburger"
+Esperado:Independente da resolução o link "My tasks" deve ser sempre exibido na barra de navegação
+Encontrado:Quando se vai para a versão mais reduzida da tela o link é movido para dentro do componente Hamburger no top da tela sendo necessario clicar no botão para visualizar o link
+
+5 - Sistema permite adicionar task com mais de 250 caracters (Front/back)
+Ao realizar o login e acessar a tela de tarefas, quando informo o nome de uma tarefa com mais de 250 caracteres, não está realizando nenhuma validação e sendo possível adicionar a tarefa
+Esperado: limitar a 250 caracteres digitados 
+Encontrado: permitiu digitar e salvar tarefa com 254 caracteres.
+
+
+
+Referente aos critérios de aceite da Story 2 foram encontrados os seguintes pontos:
+
+1 - O sistema está permitindo editar a tarefa dentro da modal de subtarefa
+Ao realizar o login e acessar a modal de subtarefas de uma tarefa já cadastrada, o text area do nome da tarefa está habilitado sendo possível realizar a edição do mesmo.
+Esperado: Campo descrição da tarefa dever ser somente leitura 
+Encontrado: permitiu editar a descrição da tarefa dentro da modal de subtarefa.
+
+2 - O sistema não valida obrigatoriedade dos campos ao inserir subtarefa
+Ao realizar o login e acessar a modal de subtarefas de uma tarefa já cadastrada, quando não informo os campos obrigatórios e tento salvar a sub tarefa, não é realizada a validação dos campos obrigatórios
+Esperado:Não deve permitir adicionar subtarefa sem o preenchimento dos campos obrigatórios
+Encontrado:Permitiu salvar a subtarea sem descrição da mesma
+
+3 - Sistema permite adicionar subtask com mais de 250 caracters (Front/back)
+Ao realizar o login e acessar a modal de subtarefas de uma tarefa já cadastrada, quando informo o nome de uma subtarefa com mais de 250 caracteres, não está realizando nenhuma validação e sendo possível adicionar a subtarefa
+Esperado: limitar a 250 caracteres digitados 
+Encontrado: permitiu digitar e salvar subtarefa com 251 caracteres.
+
+Algumas melhorias encontradas que podem agregar valor para o usuário:
+1 - filtro de pesquisa para facilitar encontrar a tarefa;
+2 - colocar um scroll na grid de tarefas e subtarefa para que seja otimizada a utilização em uma pagina sem ter que rolar a tela toda
+
+
+
+
