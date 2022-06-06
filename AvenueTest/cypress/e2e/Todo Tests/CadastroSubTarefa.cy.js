@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 import * as parametros from "../../fixtures/parametros.js"
-import * as tarefaElement from "../../support/Elements/TaskElements"
+import * as tarefaElement from "../../Elements/TaskElements"
 
 const faker = require("faker");
 const randomName =faker.random.alphaNumeric(30)
